@@ -1,0 +1,67 @@
+dialog{
+    width: 85%;
+    top: 2rem;
+    border-radius: 8px;
+    border-color: transparent;
+    animation: modalAnime 1s ease
+}
+
+dialog::backdrop{
+    background-color: rgb(0 0 0 / 0.5);
+}
+
+.modal__content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.modal__header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.modal__user{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.modal__user h2{ 
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.modal__user span{
+    font-size: 0.875rem;
+    color: var(--gray200);
+}
+
+.modal__user img{
+    width: 3.5rem;
+}
+
+.modal__title{
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.modal__content--text{
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
+
+@keyframes modalAnime {
+    0%{
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}

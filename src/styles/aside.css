@@ -1,0 +1,54 @@
+.suggested__users{
+   margin-top: 3rem;
+}
+
+.suggested__users > h2{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.suggested__users__list img{
+    width: 3.5rem;
+}
+
+.suggested__users__list{
+    display: flex;
+    gap: 2rem;
+    overflow-x: scroll;
+}
+
+.suggested__users__list h2{
+    width: 12rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+@media( min-width: 700px ){
+    .suggested__users__list{
+        overflow-x: hidden;
+    }
+}
+
+@media( min-width: 1200px ){
+
+    .suggested__users{
+        margin-top: 0;
+        width: 40%;
+        position:sticky;
+        top: 8rem;
+        margin-left: 8rem;
+    }
+    .suggested__users__list{
+        flex-direction: column;
+        overflow-x: hidden;
+        position: relative;
+    }
+    .btn--default-1{
+        position: absolute;
+        right: 0;
+    }
+
+}
+
+

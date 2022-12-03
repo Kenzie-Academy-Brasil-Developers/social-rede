@@ -1,0 +1,92 @@
+.btn--default-1{
+    height: 1.75rem;
+    width: 5.563rem;
+    border-radius: 4px;
+    background-color: var(--gray400);
+    border: 1px solid var(--gray100);
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    transition: .5s ease;
+}
+
+.btn--default--following{
+    background-color: var(--brand100);
+    color: var(--gray400);
+    border: transparent;
+}
+
+.btn--bkcground{
+    background-color: var(--gray500);
+}
+
+#btn--following{
+    height: 1.75rem;
+    width: 5.563rem;
+}
+
+#btn-post{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 4.313rem;
+    height: 2.375rem;
+    background-color: var(--gray400);
+    color: var(--gray300);
+    font-weight: 700;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+#btn-post:hover{
+    background-color: var(--gray100);
+    color: var(--gray400);
+    border-color: transparent;
+}
+
+.card__post__btns{
+    display: flex;
+    gap: 1rem;
+    margin: .5rem 0;
+}
+
+.btn--open-post{
+    width: 5.75rem;
+    height: 2.375rem;
+    border-radius: 4px;
+    border-color: transparent;
+    cursor: pointer;
+    background-color: var(--gray100);
+    color: var(--gray400);
+}
+
+.btn--like{
+    border: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    animation: btnLikeAnime 1s ease;
+}
+
+#btnModalClose{
+    font-size: large;
+    font-weight: 600;
+    background-color: var(--gray500);
+    color: var(--gray300);
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    border-color: transparent;
+}
+
+@keyframes btnLikeAnime {
+    0%{
+       width: 8rem;
+    }
+    
+    100%{
+        width: auto;
+    }
+    
+}

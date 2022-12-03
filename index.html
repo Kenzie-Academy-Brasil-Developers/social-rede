@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/global.css">
+    <link rel="stylesheet" href="./src/styles/buttons.css">
+    <link rel="stylesheet" href="./src/styles/modal.css">
+    <link rel="stylesheet" href="./src/styles/aside.css">
+    <link rel="stylesheet" href="./src/styles/form.css">
+    <link rel="stylesheet" href="./src/styles/nav.css">
+    <link rel="stylesheet" href="./src/styles/index.css">
+    <title>TechPosters</title>
+</head>
+<body>
+    <dialog class="modal"></dialog>
+    <nav>
+        <header>
+            <img src="./src/assets/img/logo.svg" alt="">
+            <a href="#">Sair</a>
+        </header>
+    </nav>
+    <main>
+        <div class="container">
+            
+                <div class="creating__post__header">
+                    <div class="creating__post">
+                        <img src="./src/assets/img/user1.svg" alt="foto perfil">
+                        <div class="creating__post__header">
+                            <h2>Samuel Leão</h2>
+                            <span>Front end Engineer</span>
+                        </div>
+                    </div>
+                    <form>
+                        <input class="border-inputs font--size-family" type="text" placeholder="Digitar título do post">
+                        <textarea class="border-inputs font--size-family" name="textPost" id="textPost" cols="30" rows="10" placeholder="Digitar descrição do post"></textarea>
+                        <button id="btn-post" class="border-inputs" type="submit">Postar</button>
+                    </form>
+                </div>
+                <aside class="suggested__users display--flex flex--direction gap--default">
+                    <h2>Sugestões para você seguir</h2 >
+                        <ul class="suggested__users__list">
+                            
+                        </ul>
+                        
+                    </aside>
+            
+            <section class="card__container"></section>
+
+        </div>
+    </main>
+    <script src="./src/scripts/users.js"></script>
+    <script src="./src/scripts/posts.js"></script>
+    <script src="./src/scripts/sugestUsers.js"></script>
+    <script src="./src/scripts/index.js"></script>
+</body>
+</html>
