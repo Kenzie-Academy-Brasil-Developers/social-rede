@@ -78,6 +78,9 @@
     height: 2.5rem;
     cursor: pointer;
     border-color: transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 @keyframes btnLikeAnime {
